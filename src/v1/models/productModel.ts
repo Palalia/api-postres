@@ -1,7 +1,8 @@
 
 import sequelize from "../config/mysql";
 import DataTypes from "sequelize";
-const Product = sequelize.define('dess_product', {
+import { ProductInterface } from "../interfaces/productInterface";
+const Product = sequelize.define<ProductInterface>('dess_product', {
     id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
