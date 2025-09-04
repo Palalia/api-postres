@@ -10,4 +10,4 @@ interface ConceptInterface extends Model<InferCreationAttributes<ConceptInterfac
     conversionUnit: number | null;
     image: string | null;
 }
-export default ConceptInterface;
+export { ConceptInterface };

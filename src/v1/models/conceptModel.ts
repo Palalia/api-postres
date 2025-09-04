@@ -1,7 +1,7 @@
 
 import sequelize from "../config/mysql";
 import DataTypes from "sequelize";
-import ConceptInterface from "../interfaces/conceptInterface";
+import { ConceptInterface } from "../interfaces/conceptInterface";
 const Product = sequelize.define<ConceptInterface>('dess_concept', {
     id: {
         type: DataTypes.INTEGER,
