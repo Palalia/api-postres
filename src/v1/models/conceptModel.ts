@@ -37,5 +37,4 @@ const Product = sequelize.define<ConceptInterface>('dess_concept', {
         allowNull: true
     }
 });
-Product.sync({ alter: true });
 export default Product;
